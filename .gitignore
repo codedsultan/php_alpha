@@ -1,28 +1,4 @@
-/.phpunit.cache
-/node_modules
-/public
-/storage/*.key
-/storage/**/*.sqlite
 /vendor
-.env
-package-lock.json
-.env.backup
-.env.production
-Homestead.json
-Homestead.yaml
-auth.json
-npm-debug.log
-yarn-error.log
-.phpunit.result.cache
-/.fleet
-/.idea
-/.vscode
-server.php
-/bootstrap
-.DS_STORE
-s
-/tmp
-composer.json
-composer.lock
+
 
 
