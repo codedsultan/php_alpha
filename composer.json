@@ -1,0 +1,27 @@
+{
+    "name": "codesultan369/php_alpha",
+    "description": "A Custom PHP MVC CRUD project/framework",
+    "authors": [
+        {
+            "name": "Olusegun Ibraheem",
+            "email": "codesultan369@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/collections": "^9.52"
+    },
+    "autoload": {
+        "psr-4": {
+            "Core\\": "Core/",
+            "Http\\": "Http/"
+        }
+    },
+    "require-dev": {
+        "pestphp/pest": "^1.23"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
