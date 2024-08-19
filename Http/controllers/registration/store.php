@@ -1,6 +1,7 @@
 <?php
 
 use Core\App;
+use Core\Authenticator;
 use Core\Database;
 use Core\Validator;
 
@@ -45,12 +46,13 @@ if ($user) {
 } else {
 
     // If not, then create , log and redirect
-    $db->query('INSERT INTO users(email,password) VALUES (:email,:password) ', [
+    $db->query('INSERT INTO users(name,email,password) VALUES (:name,:email,:password) ', [
+        'name' => 'John Doe',
         'email' => $email,
         'password' => password_hash($password,PASSWORD_BCRYPT)
     ]);
-
-    login($user);
+    $auth = new Authenticator;
+    $auth->login($user);
 
     header('Location: /');
     exit;
