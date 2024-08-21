@@ -8,7 +8,8 @@
         }
     ],
     "require": {
-        "illuminate/collections": "^9.52"
+        "illuminate/collections": "^9.52",
+        "psr/container": "^2.0"
     },
     "autoload": {
         "psr-4": {
